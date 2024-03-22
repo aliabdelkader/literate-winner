@@ -16,7 +16,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        image: [{ pytest_run: "" }, { pytest_run: "and not cli" }]
+        image: [{ pytest_run: "" }, { pytest_run: "or cli" }]
 
     runs-on: ubuntu-latest
     steps:
